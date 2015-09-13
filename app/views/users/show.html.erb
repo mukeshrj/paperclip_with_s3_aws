@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<%= @user.email %>
+<%#=image_tag @user.profile_pic.url %>
+<%= image_tag @user.profile_pic.url(:medium) %>
+<%= image_tag @user.profile_pic.url(:thumb) %>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
